@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Tags, Elementos e Atributos HTML</title>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Meta Tags, Elementos e Atributos HTML</h1>
+    </header>
+
+    <main>
+        <p>Meta tags são linhas de código HTML que fornecem informações sobre a página web para navegadores e motores de
+            busca. Localizadas na seção
+            <head> do documento HTML, elas não aparecem visualmente na página, mas têm um impacto profundo na forma comoo site é exibido e percebido em diferentes plataformas.
+        </p>
+
+        <label>
+            <h2>Metas tags utilizadas no head do HTML</h2>
+        </label>
+        <ul>
+            <li><strong>&lt;meta charset="UTF-8"&gt;</strong>: Define o conjunto de caracteres utilizado na página.</li>
+            <li><strong>&lt;meta name="viewport"&gt;</strong>: Controla o dimensionamento e a escala da página em dispositivos móveis, fundamental para responsividade.</li>
+            
+            <ul><strong>content=</strong>
+                <li><strong>"width"</strong>: Define a largura em pixel de um viewport</li>
+                <li><strong>"height"</strong>: Define a altura em pixel de um viewport</li>
+                <li><strong>"initial-scale"</strong>: Define a relação entre a largura do dispositivo (largura do dispositivo no modo retrato ou altura do dispositivo no modo paisagem) e o tamanho da janela de visualização</li>
+                <li><strong>"maximum-scale"</strong>: Define o valor máximo de zoom, deve ser maior ou igual aominimum-scale ou o comportamento sera indeterminado</li>
+                <li><strong>"minimum-scale"</strong>: Define o valor mínimo do zoom, deve ser menor ou igual ao
+                    maximum-scale ou o comportamento sera indeterminado</li>
+                <li><strong>"user-scalable"</strong>: Define se o usuário pode ou não aumentar ou diminuir o zoom da
+                    página, os valores possíveis são "yes" e "no"</li>
+            </ul>
+
+            <li><strong>&lt;meta name="description"&gt;</strong>: Fornece uma descrição curta da página, utilizada pelos motores de busca.</li>
+            <li><strong>&lt;meta name="author"&gt;</strong>: Especifica o autor da página.;</li>
+            <li><strong>&lt;meta name="referrer"&gt;</strong>: Controle as informações enviadas no cabeçalho HTTP Referer, protegendo os dados dos usuários.</li>
+            <li><strong>&lt;meta name="content-security-policy"</strong>: Preveni ataques de scripts maliciosos ao especificar quais fontes de conteúdo são confiáveis.</li>
+            <li><strong>&lt;meta name="robots"&gt;</strong>: conjunto de orientações para controlar como os robôs dos mecanismos de busca rastreiam e indexam as páginas do site.</li>
+            <li><strong>&lt;meta name="keywords"&gt;</strong>: Lista palavras-chave relevantes para a página, usadas pelos motores de busca.</li>
+            <li><strong>&lt;meta name="theme-color"&gt;</strong>: Personalize a cor da barra de endereço em navegadores móveis</li>
+            <li><strong>&lt;meta name="color-scheme"&gt;</strong>: Adapta site aos modos claro e escuro, ajustando-se automaticamente às preferências do usuário.</li>
+            <li><strong>&lt;meta name="favicon"&gt;</strong>: Especifica o ícone da página exibido na aba do navegador</li>
+        </ul>
+
+        <label>
+            <h2>Protocolo Open Graph</h2>
+            <p>Define como as páginas de um site aparecem ao serem compartilhadas em redes sociais e aplicativos de mensagens</p>
+        </label>
+        <ul>
+            <li><strong>&lt;meta property="og:title"&gt;</strong>: Define o título da página</li>
+            <li><strong>&lt;meta property="og:description"&gt;</strong>: Fornece uma
+                descrição</li>
+            <li><strong>&lt;meta property="og:image"&gt;</strong>: Especifica a URL de uma
+                imagem que será exibida</li>
+            <li><strong>&lt;meta property="og:url"</strong>: Define url, como seu ID permanente.</li>
+        </ul>
+
+        <label>
+            <h2>Elementos de formulário HTML:</h2>
+        </label>
+        <ul>
+            <li><strong>color</strong>: Especifica uma cor para um elemento</li>
+            <li><strong>date</strong>: Permite que o usuário selecione uma data</li>
+            <li><strong>datetime-local</strong>: Permite que o usuário selecione uma data e hora local</li>
+            <li><strong>email</strong>: Permite que o usuário insira um endereço de e-mail</li>
+            <li><strong>file</strong>: Permite que o usuário selecione um arquivo</li>
+            <li><strong>hidden</strong>: Define um campo oculto</li>
+            <li><strong>image</strong>: Permite que o usuário selecione uma imagem</li>
+            <li><strong>month</strong>: Permite que o usuário selecione um mês</li>
+            <li><strong>number</strong>: Permite que o usuário insira um número</li>
+            <li><strong>range</strong>: Permite que o usuário selecione um valor dentro de um intervalo</li>
+            <li><strong>search</strong>: Permite que o usuário insira uma consulta de pesquisa</li>
+            <li><strong>tel</strong>: Permite que o usuário insira um número de telefone</li>
+            <li><strong>time</strong>: Permite que o usuário selecione uma hora</li>
+            <li><strong>url</strong>: Permite que o usuário insira um URL</li>
+            <li><strong>week</strong>: Permite que o usuário selecione uma semana</li>
+        </ul>
+
+        <label>
+            <h2>Atributos de formulário HTML:</h2>
+        </label>
+        <ul>
+            <li><strong>action</strong>: Define a URL para onde os dados do formulário devem ser enviados</li>
+            <li><strong>target</strong>: Define onde o resultado do formulário deve ser exibido</li>
+            <li><strong>method</strong>: Define o método HTTP a ser usado ao enviar o formulário</li>
+            <li><strong>autocomplete</strong>: Define se o campo deve ter preenchimento automático</li>
+            <li><strong>value</strong>: Define o valor inicial do campo</li>
+            <li><strong>readonly</strong>: Define se o campo deve ser somente leitura</li>
+            <li><strong>disabled</strong>: Define se o campo deve estar desativado</li>
+            <li><strong>size</strong>: Define o tamanho do campo</li>
+            <li><strong>maxlength</strong>: Define o número máximo de caracteres permitidos no campo</li>
+            <li><strong>multiple</strong>: Define se o campo deve permitir a seleção de múltiplos valores</li>
+            <li><strong>placeholder</strong>: Define um texto de exemplo que aparece no campo quando ele está vazio</li>
+            <li><strong>required</strong>: Define se o campo deve ser obrigatório</li>
+            <li><strong>autofocus</strong>: Define se o campo deve receber foco automaticamente</li>
+        </ul>
+    </main>
+
+    <footer>
+
+        <ul>
+            <li><a href="https://www.rocketseat.com.br/blog/artigos/post/desvendando-meta-tags-html"
+                    target="_blank">Desvendando Meta Tags HTML</a></li>
+            <li><a href="https://www.devmedia.com.br/html-meta-tags-entendendo-o-uso-de-meta-tags/30328"
+                    target="_blank">HTML Meta Tags - Entendendo o Uso de Meta Tags</a></li>
+            <li><a href="https://pt.semrush.com/blog/meta-tags/" target="_blank">Meta Tags: O Que São e Como Usá-las</a>
+            </li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/meta"
+                    target="_blank">Elemento meta - Referência | MDN</a></li>
+            <li><a href="https://ogp.me/" target="_blank">Open Graph Protocol</a></li>
+            <li><a href="https://www.conversion.com.br/blog/open-graph" target="_blank">Open Graph: Como Usar no seu Site</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
