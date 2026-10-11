@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meta Tags, Elementos e Atributos HTML">
+    <meta name="keywords" content="Meta tags, elementos html, atributos html, tags html">
+    <meta name="author" content="Erica">
+    <meta name="referrer" content="no-referrer"><!-- Controla as informações enviadas no cabeçalho HTTP Referer, protegendo os dados dos usuários. -->
+    <meta name="content-security-policy" content="default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com; img-src 'self' https://trusted-images.com; font-src 'self' https://trusted-fonts.com; connect-src 'self' https://trusted-api.com; frame-src 'self' https://trusted-frames.com;"><!-- Define uma política de segurança de conteúdo (CSP) para proteger a página contra ataques de scripts maliciosos, especificando quais fontes de conteúdo são confiáveis. -->
+    <meta name="robots" content="index, follow"> <!-- Permite que os motores de busca indexem a página e sigam os links nela contidos -->
+    <meta name="theme-color" content="#60f505"> <!-- Define a cor da barra de endereço -->
+    <meta name="color-scheme" content="light dark"> <!-- Permite que o site se adapte aos modos claro e escuro, ajustando-se automaticamente às preferências do usuário. -->
+    <meta property="og:title" content="Meta Tags, Elementos e Atributos HTML"> <!-- Título da página para redes sociais -->
+    <meta property="og:description" content="Meta Tags, Elementos e Atributos HTML"> <!-- Descrição da página para compartilhamento -->
+    <meta property="og:url" content="https://meta-tags.com/page.html"> <!-- URL da página para compartilhamento -->
+
     <title>Meta Tags, Elementos e Atributos HTML</title>
 </head>
 
@@ -20,14 +32,13 @@
             <head> do documento HTML, elas não aparecem visualmente na página, mas têm um impacto profundo na forma comoo site é exibido e percebido em diferentes plataformas.
         </p>
 
-        <label>
+  
             <h2>Metas tags utilizadas no head do HTML</h2>
-        </label>
         <ul>
             <li><strong>&lt;meta charset="UTF-8"&gt;</strong>: Define o conjunto de caracteres utilizado na página.</li>
             <li><strong>&lt;meta name="viewport"&gt;</strong>: Controla o dimensionamento e a escala da página em dispositivos móveis, fundamental para responsividade.</li>
             
-            <ul><strong>content=</strong>
+           <ul><strong>content=</strong>
                 <li><strong>"width"</strong>: Define a largura em pixel de um viewport</li>
                 <li><strong>"height"</strong>: Define a altura em pixel de um viewport</li>
                 <li><strong>"initial-scale"</strong>: Define a relação entre a largura do dispositivo (largura do dispositivo no modo retrato ou altura do dispositivo no modo paisagem) e o tamanho da janela de visualização</li>
@@ -49,10 +60,9 @@
             <li><strong>&lt;meta name="favicon"&gt;</strong>: Especifica o ícone da página exibido na aba do navegador</li>
         </ul>
 
-        <label>
+
             <h2>Protocolo Open Graph</h2>
             <p>Define como as páginas de um site aparecem ao serem compartilhadas em redes sociais e aplicativos de mensagens</p>
-        </label>
         <ul>
             <li><strong>&lt;meta property="og:title"&gt;</strong>: Define o título da página</li>
             <li><strong>&lt;meta property="og:description"&gt;</strong>: Fornece uma
@@ -62,30 +72,102 @@
             <li><strong>&lt;meta property="og:url"</strong>: Define url, como seu ID permanente.</li>
         </ul>
 
-        <label>
             <h2>Elementos de formulário HTML:</h2>
-        </label>
         <ul>
-            <li><strong>color</strong>: Especifica uma cor para um elemento</li>
-            <li><strong>date</strong>: Permite que o usuário selecione uma data</li>
-            <li><strong>datetime-local</strong>: Permite que o usuário selecione uma data e hora local</li>
-            <li><strong>email</strong>: Permite que o usuário insira um endereço de e-mail</li>
-            <li><strong>file</strong>: Permite que o usuário selecione um arquivo</li>
-            <li><strong>hidden</strong>: Define um campo oculto</li>
-            <li><strong>image</strong>: Permite que o usuário selecione uma imagem</li>
-            <li><strong>month</strong>: Permite que o usuário selecione um mês</li>
-            <li><strong>number</strong>: Permite que o usuário insira um número</li>
-            <li><strong>range</strong>: Permite que o usuário selecione um valor dentro de um intervalo</li>
-            <li><strong>search</strong>: Permite que o usuário insira uma consulta de pesquisa</li>
-            <li><strong>tel</strong>: Permite que o usuário insira um número de telefone</li>
-            <li><strong>time</strong>: Permite que o usuário selecione uma hora</li>
-            <li><strong>url</strong>: Permite que o usuário insira um URL</li>
-            <li><strong>week</strong>: Permite que o usuário selecione uma semana</li>
+            <li>
+                <strong>color</strong>: Especifica uma cor para um elemento
+                <form>
+                    <input type="color" name="cor" value="#507000">
+                </form>
+            </li>
+            <li>
+                <strong>date</strong>: Permite que o usuário selecione uma data
+                <form>
+                    <input type="date" name="data"> 
+                </form>
+            </li>
+            <li>
+                <strong>datetime-local</strong>: Permite que o usuário selecione uma data e hora local
+                <form>
+                    <input type="datetime-local" name="data-hora">
+                </form>
+            </li>
+            <li>
+                <strong>email</strong>: Permite que o usuário insira um endereço de e-mail
+                <form>
+                    <input type="email" name="email">
+                </form>
+            </li>
+            <li>
+                <strong>file</strong>: Permite que o usuário selecione um arquivo
+                <form>
+                    <input type="file" name="arquivo">
+                </form>
+            </li>
+            <li>
+                <strong>hidden</strong>: Define um campo oculto
+                <form>
+                    <input type="hidden" name="id" value="123">
+                </form>
+            </li>
+            <li>
+                <strong>image</strong>: Permite que o usuário selecione uma imagem
+                <form>
+                    <input type="image" name="imagem" src="imagem.jpg" alt="Imagem">
+                </form>
+            </li>
+            <li>
+                <strong>month</strong>: Permite que o usuário selecione um mês
+                <form>
+                    <input type="month" name="mes">
+                </form>
+            </li>
+            <li>
+                <strong>number</strong>: Permite que o usuário insira um número
+                <form>
+                    <input type="number" name="numero">
+                </form>
+            </li>
+            <li>
+                <strong>range</strong>: Permite que o usuário selecione um valor dentro de um intervalo
+                <form>
+                    <input type="range" name="valor" min="0" max="100">
+                </form>
+            </li>
+            <li>
+                <strong>search</strong>: Permite que o usuário insira uma consulta de pesquisa
+                <form>
+                    <input type="search" name="pesquisa">
+                </form>
+            </li>
+            <li>
+                <strong>tel</strong>: Permite que o usuário insira um número de telefone
+                <form>
+                    <input type="tel" name="telefone">
+                </form>
+            </li>
+            <li>
+                <strong>time</strong>: Permite que o usuário selecione uma hora
+                <form>
+                    <input type="time" name="hora">
+                </form>
+            </li>
+            <li>
+                <strong>url</strong>: Permite que o usuário insira um URL
+                <form>
+                    <input type="url" name="url">
+                </form>
+            </li>
+            <li>
+                <strong>week</strong>: Permite que o usuário selecione uma semana
+                <form>
+                    <input type="week" name="semana">
+                </form>
+            </li>
         </ul>
 
-        <label>
+
             <h2>Atributos de formulário HTML:</h2>
-        </label>
         <ul>
             <li><strong>action</strong>: Define a URL para onde os dados do formulário devem ser enviados</li>
             <li><strong>target</strong>: Define onde o resultado do formulário deve ser exibido</li>
@@ -101,10 +183,12 @@
             <li><strong>required</strong>: Define se o campo deve ser obrigatório</li>
             <li><strong>autofocus</strong>: Define se o campo deve receber foco automaticamente</li>
         </ul>
+
     </main>
 
     <footer>
 
+    <h3>Referências:</h3>
         <ul>
             <li><a href="https://www.rocketseat.com.br/blog/artigos/post/desvendando-meta-tags-html"
                     target="_blank">Desvendando Meta Tags HTML</a></li>
